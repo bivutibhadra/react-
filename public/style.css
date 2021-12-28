@@ -1,0 +1,75 @@
+*{
+ margin: 0;
+padding:0;
+}
+
+
+
+
+.headingStylepub{
+    background-color: purple;
+    color: white;
+    padding: 15px;  
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+
+.headingStylepub:hover{
+    background-color: purple;
+    color: white;
+    padding: 15px;  
+    text-align: center;
+    transition: .5s;
+    color:#ffda77;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 4px 4px grey;
+
+
+}
+
+.card{
+    background-color: #ffdb7788;
+/*     box-shadow: 2px 4px 4px grey;
+ */    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width:390px;
+    display: inline-block;
+
+}
+
+.card:hover{
+    background-color: #ffda77;
+    box-shadow: 2px 4px 4px grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width:390px;
+    display: inline-block;
+    color: purple;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cardTitle{
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.cardDesc{
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+ .cardFooter{
+     text-align: center;
+     font-weight: bold;
+     font-size: .7rem;
+ }
