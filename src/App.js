@@ -3,21 +3,22 @@ import Card from "./components/Card";
 import Data from './data.json';
 
 function App(){
+
+let items=[];
+/* for(let x=0;x<Data.length;x++){
+    items.push(<Card todoName={Data[x].title} todoAddress="House : 4/3/1-Mohonpur,Ring raod,Adabor,Shyamoli,Dhaka-1207"todoPhone={Data[x].desc}/>)
+} */
+
+/* mapping */
+
 return <div>
-<div> 
+{/* hedding start */}
 <h1 class="headingStylepub">**&nbsp;M &nbsp;Y &nbsp;&nbsp; D &nbsp;E &nbsp;S &nbsp;I &nbsp;G &nbsp;  N&nbsp;**</h1>
-
-<Card todoName={Data[0].title} todoAddress="House : 4/3/1-Mohonpur,Ring raod,Adabor,Shyamoli,Dhaka-1207"todoPhone={Data[0].desc}/>
-
-
-<Card todoName={Data[1].title} todoAddress="House : 4/3/11-Mohonpur,Ring raod,Adabor,Shyamoli,Dhaka-1207"todoPhone={Data[1].desc}/>
-
-
-<Card todoName="Name : Bhadraa" todoAddress="House : 4/3/11-Mohonpur,Ring raod,Adabor,Shyamoli,Dhaka-1207"todoPhone="Phone no : 0130324441"/>
-
+{/* hedding end */}
+{Data.map((item, index)=> <Card key={index} todoName={item.title} todoAddress="House : 4/3/1-Mohonpur,Ring raod,Adabor,Shyamoli,Dhaka-1207"todoPhone={item.desc}/>)} 
 </div>
 
-</div>
+
     
 }
 
