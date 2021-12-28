@@ -14,10 +14,11 @@
  
  
  function Card(props){
+const {todoName,todoAddress,todoPhone} = props;
    return <div className="card"> 
-   <h2 className="cardTitle">{props.todoName}</h2>
-   <h3 className="cardTitle">{props.todoAddress}</h3>
-     <p className="cardDesc">{props.todoPhone}</p>
+   <h2 className="cardTitle">{todoName}</h2>
+   <h3 className="cardTitle">{todoAddress}</h3>
+     <p className="cardDesc">{todoPhone}</p>
      <p className="cardFooter">{"Date : "+currentdate + "/"+currentMonth +"/"+currentYear}</p>
    </div>
  }
